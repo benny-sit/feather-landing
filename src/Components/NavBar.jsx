@@ -1,5 +1,8 @@
 import React from "react";
 
+
+import ficon from '../../public/ficon64.png'
+
 export default function NavBar() {
   return (
     <div className="navbar bg-base-200/50 text-gray-700 z-10 relative">
@@ -36,7 +39,7 @@ export default function NavBar() {
             </li>
           </ul>
         </div>
-        <a className="ml-5"><img src="/ficon64.png" className="h-10" /></a>
+        <a className="ml-5"><img src={ficon} className="h-10" /></a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">

@@ -9,7 +9,7 @@ import Join from './Components/Join';
 import NavBar from './Components/NavBar';
 import Partners from './Components/Partners';
 import Stats from './Components/Stats';
-import Footer from './Footer';
+import Footer from './Components/Footer';
 
 function App() {
 

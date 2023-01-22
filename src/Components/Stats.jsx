@@ -1,18 +1,21 @@
 import React from 'react'
 import { Parallax } from 'react-scroll-parallax'
 
+import statsF1 from '../../public/images/stats/statsF1.png'
+import statsF2 from '../../public/images/stats/statsF2.png'
+
 export default function Stats() {
   return (
     <section className='flex flex-col w-full max-w-4xl relative px-2 '>
         {/* Absolute Elements */}
         <Parallax rotate={[-25, 10, 'easeOut']} opacity={[0.3, 0.1]} className='absolute inset-0 -z-10 hidden lg:block'>
-            <img src='/stats/statsF1.png' className='object-contain ml-auto h-40 ' alt='feather1'/>
+            <img src={statsF1} className='object-contain ml-auto h-40 ' alt='feather1'/>
         </Parallax>
         <div className='flex flex-col w-full max-w-4xl mt-24 gap-12 relative '>
         <div className='absolute h-full w-2/5 ml-2 -z-10 rounded-full box-shadow-gray-xs overflow-hidden opacity-70'>
             <div className='bg-texture absolute inset-0 overflow-hidden' />
             <Parallax rotate={[30, -30, 'easeOut']} translateY={[-20,0]} opacity={[1, 0.6]} className='absolute inset-0 overflow-hidden' rootMargin={{left: 0, right: 0, bottom: -500, top: 0}}>
-                    <img src='/stats/statsF2.png' className='object-contain h-24 w-24 absolute bottom-8 left-8' alt='feather2'/>
+                    <img src={statsF2} className='object-contain h-24 w-24 absolute bottom-8 left-8' alt='feather2'/>
             </Parallax>
         </div>
 

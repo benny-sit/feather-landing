@@ -1,10 +1,13 @@
 import React from 'react'
 
+import ficon from '../../public/ficon64.png'
+
+
 export default function Footer() {
   return (
     <footer className="footer p-10 bg-base-200/75 text-neutral-content">
     <div>
-        <img src='/ficon64.png'/>
+        <img src={ficon} />
         <p><span className='font-north'>FEATHER</span> Industries Ltd.<br/>Made To Be Perfect.</p>
     </div> 
     <div>

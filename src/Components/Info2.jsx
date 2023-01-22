@@ -1,6 +1,9 @@
 import React from 'react'
 import { Parallax } from 'react-scroll-parallax'
 
+import info2f from '../../public/images/info2/info2f.png'
+import info2s from '../../public/images/info2/info2s.png'
+
 export default function Info2() {
   return (
     <section className=' mt-20 bg-gray-50 w-full'>
@@ -17,10 +20,10 @@ export default function Info2() {
             </div>
             <div className='basis-1/2 relative overflow-hidden md:mx-0 mx-auto w-1/2'>
               <Parallax rotate={[-5, 3]} rootMargin={{ top: 0, right: 0, bottom: -500, left: 0 }}>
-                  <img src='/info2/info2f.png' className='opacity-90'/>
+                  <img src={info2f} className='opacity-90'/>
               </Parallax>
               <Parallax opacity={[0.2, 0.8]}  translateY={[20, -5]} rootMargin={{ top: 0, right: 0, bottom: -500, left: 0 }}>
-                  <img src='/info2/info2s.png'/>
+                  <img src={info2s}/>
               </Parallax>
             </div>
         </div>

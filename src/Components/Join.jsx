@@ -1,6 +1,8 @@
 import React from 'react'
 import { Parallax } from 'react-scroll-parallax'
 
+import bigFeather from '../../public/images/join/joinF1.png'
+
 export default function Join() {
   return (
     <div className='flex flex-col items-center pt-20 w-full max-w-4xl overflow-hidden'>
@@ -9,7 +11,7 @@ export default function Join() {
         </div>
         <div className='py-48 w-full flex justify-center items-center relative group'>
           <Parallax speed={-15} className='absolute'>
-          <img src='/join/joinF1.png' alt='feather1' className=' opacity-20 group-hover:opacity-30 transition-all duration-300'/>
+          <img src={bigFeather} alt='feather1' className=' opacity-20 group-hover:opacity-30 transition-all duration-300'/>
 
           </Parallax>
           <button className='btn font-north relative text-gray-600 hover:text-black shadow-2xl hover:shadow-xl transition-all duration-500'>Join Now</button>
