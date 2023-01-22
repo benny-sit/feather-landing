@@ -12,10 +12,10 @@ export default function Stats() {
             <img src={statsF1} className='object-contain ml-auto h-40 ' alt='feather1'/>
         </Parallax>
         <div className='flex flex-col w-full max-w-4xl mt-24 gap-12 relative '>
-        <div className='absolute h-full w-2/5 ml-2 -z-10 rounded-full box-shadow-gray-xs overflow-hidden opacity-70'>
+        <div className='absolute h-full w-full md:w-2/5 ml-2 -z-10 rounded-full box-shadow-gray-xs overflow-hidden opacity-70'>
             <div className='bg-texture absolute inset-0 overflow-hidden' />
-            <Parallax rotate={[30, -30, 'easeOut']} translateY={[-20,0]} opacity={[1, 0.6]} className='absolute inset-0 overflow-hidden' rootMargin={{left: 0, right: 0, bottom: -500, top: 0}}>
-                    <img src={statsF2} className='object-contain h-24 w-24 absolute bottom-8 left-8' alt='feather2'/>
+            <Parallax rotate={[30, -30, 'easeOut']} translateY={[-20, 0]} opacity={[1, 0.6]} className='absolute inset-0 overflow-hidden' rootMargin={{left: 0, right: 0, bottom: -500, top: 0}}>
+                    <img src={statsF2} className='object-contain h-24 w-24 absolute bottom-20 md:bottom-8 left-8' alt='feather2'/>
             </Parallax>
         </div>
 
