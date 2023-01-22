@@ -1,0 +1,54 @@
+
+@font-face {
+  font-family: FuturaPtBold;
+  font-weight: 100 200 300 400 500 600 700 800 900;
+  src: url('../public/fonts/North.otf') format("opentype");
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+
+}
+
+@layer components {
+  .end-cursor:after {
+    content: '|';
+    @apply text-gray-700;
+  }
+
+  .end-cursor.blinking:after {
+    animation: blink 1s step-start infinite;
+  }
+
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+}
+
+@layer utilities {
+  .bg-texture {
+    background-color: #fafafa;
+    opacity: 0.3;
+    background-image: radial-gradient(#757575 1px, #fafafa 1px);
+    background-size: 20px 20px;
+  }
+
+  .box-shadow-gray-sm {
+    box-shadow: 0 8px 8px 3px rgba(128, 128, 128, 0.1);
+  }
+
+  .box-shadow-gray-xs {
+    box-shadow: -3px 4px 5px 1px rgba(128, 128, 128, 0.05);
+  }
+
+  .white-filter {
+    filter: brightness(0) invert(1);
+  }
+
+}
